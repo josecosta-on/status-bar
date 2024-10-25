@@ -43,6 +43,8 @@ public class StatusBar {
     public void setNoAutoFill() {
         Window window = activity.getWindow();
         window.getDecorView().setImportantForAutofill(View.IMPORTANT_FOR_AUTOFILL_NO_EXCLUDE_DESCENDANTS);
+        setOverlaysWebView(getIsOverlaid());
+
     }
 
     @SuppressWarnings("deprecation")
