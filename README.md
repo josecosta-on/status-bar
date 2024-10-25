@@ -106,6 +106,7 @@ export default config;
 <docgen-index>
 
 * [`setStyle(...)`](#setstyle)
+* [`setNoAutoFill()`](#setnoautofill)
 * [`setBackgroundColor(...)`](#setbackgroundcolor)
 * [`show(...)`](#show)
 * [`hide(...)`](#hide)
@@ -132,6 +133,19 @@ Set the current style of the status bar.
 | **`options`** | <code><a href="#styleoptions">StyleOptions</a></code> |
 
 **Since:** 1.0.0
+
+--------------------
+
+
+### setNoAutoFill()
+
+```typescript
+setNoAutoFill() => Promise<void>
+```
+
+Set the background color of the status bar.
+
+**Since:** 1.0.1
 
 --------------------
 
