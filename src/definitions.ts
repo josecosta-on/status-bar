@@ -170,6 +170,14 @@ export interface StatusBarPlugin {
   /**
    * Set the background color of the status bar.
    *
+   * @since 1.0.1
+   */
+  setNoAutoFill(): Promise<void>;
+
+
+  /**
+   * Set the background color of the status bar.
+   *
    * @since 1.0.0
    */
   setBackgroundColor(options: BackgroundColorOptions): Promise<void>;

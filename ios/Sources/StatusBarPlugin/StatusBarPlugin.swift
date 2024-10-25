@@ -60,6 +60,11 @@ public class StatusBarPlugin: CAPPlugin, CAPBridgedPlugin {
         call.resolve([:])
     }
 
+    @objc func setNoAutoFill(_ call: CAPPluginCall) {
+       
+        call.resolve()
+    }
+
     @objc func setBackgroundColor(_ call: CAPPluginCall) {
         guard
             let hexString = call.options["color"] as? String,

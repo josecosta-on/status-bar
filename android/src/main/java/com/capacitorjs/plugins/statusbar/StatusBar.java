@@ -40,9 +40,15 @@ public class StatusBar {
         windowInsetsControllerCompat.setAppearanceLightStatusBars(!style.equals("DARK"));
     }
 
+    public void setNoAutoFill() {
+        Window window = activity.getWindow();
+        window.getDecorView().setImportantForAutofill(View.IMPORTANT_FOR_AUTOFILL_NO_EXCLUDE_DESCENDANTS);
+    }
+
     @SuppressWarnings("deprecation")
     public void setBackgroundColor(int color) {
         Window window = activity.getWindow();
+        window.getDecorView().setImportantForAutofill(View.IMPORTANT_FOR_AUTOFILL_NO_EXCLUDE_DESCENDANTS);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(color);
