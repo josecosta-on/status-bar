@@ -72,6 +72,9 @@
     "extends": "@ionic/eslint-config/recommended"
   },
   "capacitor": {
+    "web": {
+      "src": "dist"
+    },
     "ios": {
       "src": "ios"
     },
